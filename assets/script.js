@@ -31,6 +31,7 @@ class WinAnimation {
         Config.vs.classList.add('vsAnimation')
         if(win == "DRAW"){
             Config.vs.innerHTML = "DRAW";
+            Config.vs.classList.add("green");//greener background for Draw
         }
         else if (win == "WINS"){
             Config.vs.innerHTML = "Player WINS";
@@ -66,6 +67,7 @@ class Config {
           Config.comControls.forEach((box) =>
           box.classList.remove('picked'));
           Config.vs.classList.remove('vsAnimation');
+          Config.vs.classList.remove('green')
       }
   }
 
